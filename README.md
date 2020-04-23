@@ -23,7 +23,7 @@ This will create a docker environment in `/vendor/mapkyca/mapkyca-known-docker-p
 
 Files you upload will be stored in your Known install's "Uploads" directory.
 
-Your database will be stored in `/vendor/mapkyca/mapkyca-known-docker-postgres/db/`. 
+Your database will be stored in `/vendor/mapkyca/mapkyca-known-docker-postgres/db/run/`. 
 
 **IMPORTANT**
 
