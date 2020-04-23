@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+  known:
+    container_name: known-postgres
+    image: mapkyca/mapkyca-known-docker-postgres
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8089:80"
+    volumes:
+      - ../../../:/var/www/html
+      - ../../../Uploads/:/var/www/data
+      - ./config.ini:/var/www/html/configuration/config.ini
+    depends_on:
+      - db
+  db:
+    container_name: known-database-postgres
+    build:
+      context: .
+      dockerfile: ./db/Dockerfile
+    expose:
+      - '5432'
+    volumes:
+      - ./db:/var/lib/postgresql/data
+      - ../../../warmup/schemas/postgres/postgres.sql:/docker-entrypoint-initdb.d/postgres.sql
+    environment:
+      POSTGRES_DATABASE: known
+      POSTGRES_USER: known
+      POSTGRES_PASSWORD: 12345
+    restart: always           
+        

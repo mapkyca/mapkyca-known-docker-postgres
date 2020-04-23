@@ -1,0 +1,12 @@
+{
+    "name": "mapkyca/mapkyca-known-docker",
+    "description": "Docker container for a Known install in order to quickly get you going",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Marcus Povey",
+            "email": "marcus@marcus-povey.co.uk"
+        }
+    ],
+    "require": {}
+}
