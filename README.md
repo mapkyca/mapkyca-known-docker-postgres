@@ -1,10 +1,10 @@
-# Marcus' Known Docker
+# Marcus' Known Docker (Postgres edition)
 
 This is a composer installable docker instance for your Known install.
 
 It is designed to _quickly_ get you up and running with a development environment for playing around with Known.
 
-It creates a docker install wrapping your current known instance, exposing a web server on `localhost:8088`, and using a separate database image.
+It creates a docker install wrapping your current known instance, exposing a web server on `localhost:8089`, and using a separate database image.
 
 ## Installation
 
