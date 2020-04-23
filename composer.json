@@ -1,5 +1,5 @@
 {
-    "name": "mapkyca/mapkyca-known-docker-postgress",
+    "name": "mapkyca/mapkyca-known-docker-postgres",
     "description": "Docker container for a Known install in order to quickly get you going... Postgres edition",
     "version": "1.0.0",
     "authors": [
