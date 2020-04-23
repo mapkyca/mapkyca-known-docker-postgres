@@ -22,7 +22,7 @@ services:
     expose:
       - '5432'
     volumes:
-      - ./db:/var/lib/postgresql/data
+      - ./db/run:/var/lib/postgresql/data
       - ../../../warmup/schemas/postgres/postgres.sql:/docker-entrypoint-initdb.d/postgres.sql
     environment:
       POSTGRES_DATABASE: known
