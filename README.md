@@ -9,21 +9,21 @@ It creates a docker install wrapping your current known instance, exposing a web
 ## Installation
 
 * Download and install docker
-* Add this docker image to known using composer `composer require mapkyca/mapkyca-known-docker --dev`
+* Add this docker image to known using composer `composer require mapkyca/mapkyca-known-docker-postgres --dev`
 
-This will create a docker environment in `/vendor/mapkyca/mapkyca-known-docker/`
+This will create a docker environment in `/vendor/mapkyca/mapkyca-known-docker-postgres/`
 
 ## Usage
 
-* cd `/vendor/mapkyca/mapkyca-known-docker/`
+* cd `/vendor/mapkyca/mapkyca-known-docker-postgres/`
 * `docker-compose up`
-* Point your browser at `localhost:8088` and install in the usual way
+* Point your browser at `localhost:8089` and install in the usual way
 
 ## Data storage 
 
 Files you upload will be stored in your Known install's "Uploads" directory.
 
-Your database will be stored in `/vendor/mapkyca/mapkyca-known-docker/db/`. 
+Your database will be stored in `/vendor/mapkyca/mapkyca-known-docker-postgres/db/`. 
 
 **IMPORTANT**
 
