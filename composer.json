@@ -1,12 +1,14 @@
 {
     "name": "mapkyca/mapkyca-known-docker-postgres",
     "description": "Docker container for a Known install in order to quickly get you going... Postgres edition",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
         {
             "name": "Marcus Povey",
             "email": "marcus@marcus-povey.co.uk"
         }
     ],
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^9.1"
+    }
 }
