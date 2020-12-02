@@ -1,4 +1,4 @@
-FROM php:7-apache
+FROM php:8-apache
 
 RUN apt-get update
 RUN apt-get install -y zlib1g-dev libpng-dev libcurl4-openssl-dev libpq-dev libjpeg-dev libfreetype6-dev
